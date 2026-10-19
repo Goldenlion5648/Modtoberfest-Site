@@ -19,7 +19,8 @@ const Element = complex ? "div" : "span"
     "bg-teal-900 border border-teal-700": color === "teal",
     "bg-yellow-700 border border-yellow-500": color === "yellow",
     "bg-green-900 border border-green-700": color === "green",
-    "bg-opacity-50 hover:bg-opacity-100": hoverEffects
+    "bg-opacity-50 hover:bg-opacity-100": hoverEffects,
+    "bg-opacity-50": !hoverEffects
 }]} style = {style}>
     <slot/>
 </Element>
